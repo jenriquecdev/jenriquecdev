@@ -1,0 +1,143 @@
+/* BASE GENERAL */
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #dcdcdc;
+    color: #111;
+    max-width: 900px;
+    margin: 0 auto; /* Quitamos el margen vertical del body */
+    padding: 0 10px;
+    line-height: 1.4;
+}
+
+/* HEADER ESTÁTICO (FIJO ARRIBA) */
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centra el elemento fijo */
+    width: 100%;
+    max-width: 900px; /* Mantiene el ancho alineado con el body */
+    background-color: #dcdcdc; /* Evita que el texto de fondo se traslape */
+    text-align: center;
+    padding-top: 20px;
+    z-index: 1000; /* Asegura que siempre esté por encima del contenido */
+}
+
+header hr {
+    width: 250px;   
+    margin: 10px auto 0 auto; 
+}
+
+header h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* CONTENEDOR PRINCIPAL (CON SCROLL) */
+main {
+    /* Estos márgenes impiden que el contenido se oculte detrás del header o footer fijos */
+    margin-top: 140px;    
+    margin-bottom: 140px; 
+    padding: 10px 0;
+}
+
+/* ENCABEZADOS Y TEXTOS */
+h1, h2, h3 {
+    margin: 8px 0;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+p {
+    margin: 4px 0 8px 0;
+}
+
+/* NAVEGACIÓN */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #111;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* SECCIONES */
+section {
+    margin-bottom: 40px;
+}
+
+/* LÍNEAS SEPARADORAS */
+hr {
+    border: none;
+    border-top: 2px solid #111;
+    margin: 10px 0 20px 0;
+}
+
+/* ENLACES GENERALES */
+a {
+    color: #111;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #000;
+}
+
+/* FOOTER ESTÁTICO (FIJO ABAJO) */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centra el elemento fijo */
+    width: 100%;
+    max-width: 900px; /* Mantiene el ancho alineado con el body */
+    background-color: #dcdcdc; /* Evita que el texto de fondo se traslape */
+    text-align: center;
+    padding-bottom: 20px;
+    z-index: 1000;
+}
+
+/* Línea superior del footer */
+footer hr {
+    margin: 0 0 10px 0; 
+}
+
+.social-links {
+    margin: 10px 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links svg {
+    width: 20px;
+    height: 20px;
+    fill: #111;
+    transition: fill 0.2s ease;
+}
+
+.social-links a:hover svg {
+    fill: #000;
+}
+
+.credits {
+    font-size: 0.85rem;
+    color: #333;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
